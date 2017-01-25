@@ -18,6 +18,12 @@ export class CustomModal extends React.Component {
     this.updateVisibleStateTimer = setTimeout(this.updateVisibleState, 100);
   }
 
+  componentWillUnmount() {
+    if (this.updateVisibleStateTimer !== null) {
+      clearTimeout(this.updateVisibleStateTimer);
+    }
+  }
+
   render() {
     let props = this.props;
 
