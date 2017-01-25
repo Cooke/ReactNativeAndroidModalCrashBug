@@ -14,10 +14,10 @@ export default class Crasher extends Component {
         <Button onPress={this.showModal} title="DONT CLICK ME!" color="red" />
         <Button onPress={this.showWorkAroundModal} title="SAFE TO CLICK ME!" color="green" />
         <Modal visible={this.state.showModal} onRequestClose={() => { } }>
-          <Text>Master, I'm here to serve...</Text>
+          <Text>Master, I`m here to serve...</Text>
         </Modal>
         <CustomModal visible={this.state.showWorkAroundModal} onRequestClose={() => { } }>
-          <Text>Master, I'm here to serve...</Text>
+          <Text>Master, I`m here to serve...</Text>
         </CustomModal>
       </View>
     );
